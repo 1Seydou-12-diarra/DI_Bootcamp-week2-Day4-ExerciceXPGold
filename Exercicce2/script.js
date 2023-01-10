@@ -1,16 +1,21 @@
-//Abbrev_name
+/**
+ * 
+ * @param {*} name :
+ * @returns le nom abrevié
+ */
 
 function abbrevName(name) {
-  // Split the name into an array of words
-  const words = name.split(' ');
+  /*diviser le nom en tableau de nom
+  */ 
+  const mots = name.split(' ');
   
-  // Get the first and last initials
-  const firstInitial = words[0];
-  const lastInitial = words[words.length - 1][0];
+
+  const premierMot = mots[0];
+  const deuxiemeMot = mots[mots.length - 3][0];
   
-  // Return the abbreviated name
-  return `${firstInitial} ${lastInitial}.`;
+  
+  return `${premierMot} ${deuxiemeMot}.`;
 }
 
 
-console.log(abbrevName("Yao Yann"));//-> Yao Y. 
+console.log(abbrevName("Diarrassouba seydou "));

@@ -1,15 +1,15 @@
-let input = prompt('Enter a string:');
+let input = prompt('Entre un mot');
 
-function swapCase(input) {
-    let result = '';
+function Case(input) {
+    let resultat = '';
     for (let i = 0; i < input.length; i++) {
-        let c = input[i];
-        if (c === c.toUpperCase()) {
-            result += c.toLowerCase();
+        let contenant = input[i];
+        if (contenant === contenant.uppercase()) {
+            resultat += contenant.toLowerCase();
         } else {
-            result += c.toUpperCase();
+            resultat = resultat + contenant.uppercase();
         }
     }
-    return result;
+    return resultat;
 }
-console.log(swapCase(input));
+console.log(Case(input));
